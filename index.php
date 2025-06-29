@@ -74,7 +74,7 @@ session_start();
             <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
                     <h4 class="text-white">About</h4>
-                    <p class="text-muted">Add some information about hotel booking.</p>
+                    <p class="text-muted">Nestled in the scenic hills of Piduruthalagala Mountain, our hotel offers a refreshing atmosphere with natural breezes and a serene vibe. Since our founding in 2006, we have become a trendy choice for newlyweds seeking the perfect honeymoon, as well as families looking for memorable vacations and rejuvenating surroundings. For inquiries, please contact us at info@bluemoonhotel.com or Call us 0521212666.</p>
                 </div>
                 <div class="col-sm-4 offset-md-1 py-4 text-right">
                     <?php if ($isSessionExists) { ?>
@@ -157,8 +157,9 @@ session_start();
 
     <section class="jumbotron text-center">
         <div class="container pt-lg-5 pl-5 px-5">
-            <h1 class="display-3">A brand new hotel beyond ordinary</h1>
-            <p class="lead text-muted">Book your summer holidays with us now.</p>
+            <h1 class="display-3">WELCOME TO BLUE MOON HOTEL</h1>
+            <h1 class="display-5">A functional brand beyond ordinary...</h1>
+            <p class="lead text-muted">Book your holidays with us now.</p>
             <p>
                 <?php if ($isSessionExists) { ?>
                 <a href="#" class="btn btn-success my-2" data-toggle="modal" data-target=".book-now-modal-lg">Book now<i class="fas fa-angle-double-right ml-1"></i></a>
@@ -171,8 +172,8 @@ session_start();
 
     <div class="container">
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Pricing</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+            <h1 class="display-4">Check The Rooms</h1>
+            <p class="lead">We proudly offer high-quality services at prices that remain affordable, ensuring you never have to compromise on excellence while staying within your budget.</p>
         </div>
     </div>
 
@@ -199,7 +200,7 @@ session_start();
                                     </button>
                                     <?php } ?>
                                 </div>
-                                <small class="text-muted">$250 / night</small>
+                                <small class="text-muted">25000LKR per Day</small>
                             </div>
                         </div>
                     </div>
@@ -222,7 +223,7 @@ session_start();
                                     Book
                                 </button>
                                 <?php } ?>
-                                <small class="text-muted">$180 / night</small>
+                                <small class="text-muted">18000LKR per Day</small>
                             </div>
                         </div>
                     </div>
@@ -245,7 +246,7 @@ session_start();
                                     Book
                                 </button>
                                 <?php } ?>
-                                <small class="text-muted">$130 / night</small>
+                                <small class="text-muted">12000LKR per Day</small>
                             </div>
                         </div>
                     </div>
