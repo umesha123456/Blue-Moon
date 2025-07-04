@@ -303,7 +303,7 @@ session_start();
 </main>
 
 <footer class="container">
-    <p>&copy; Company 2017-2018</p>
+    <p>&copy; Blue Moon 2025</p>
 </footer>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

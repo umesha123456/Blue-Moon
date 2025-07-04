@@ -128,7 +128,9 @@ if (isset($_POST['password_get_info'])){
             </aside>
             <dl>
                 <dt>Enter password</dt>
-                <dd><input type="text" id="password" name="password" placeholder="Enter Password" value="<?php echo $pass ?>"></dd>
+                <!--<dd><input type="text" id="password" name="password" placeholder="Enter Password" value="--><//?php echo $pass ?>"><!--</dd>-->
+                <dd><input type="text" id="password" name="password" placeholder="Enter Password" value="<?php echo htmlspecialchars($pass, ENT_QUOTES, 'UTF-8'); ?>"></dd>
+
                 <dt>Select Algorithm</dt>
                 <dd><select name="algo" id="algo">
                         <option value="<?php echo PASSWORD_DEFAULT ?>" <?php echo $selectedDefault ?>>Default</option>
@@ -137,7 +139,14 @@ if (isset($_POST['password_get_info'])){
                         <option value="<?php echo PASSWORD_SHA512 ?>" <?php echo $selectedSha512 ?>>SHA-512</option>
                     </select></dd>
                 <dt>Set Salt</dt>
-                <dd><input type="text" id="salt" name="salt" placeholder="Use automatic salt" value="<?php echo $salt ?>"></dd>
+                <!--<dd><input type="text" id="salt" name="salt" placeholder="Use automatic salt" value="--><//?php echo $salt ?>"><!--</dd>-->
+                <?php
+                    $salt = isset($_POST['salt']) ? $_POST['salt'] : '';
+                    ?>
+                    <dd>
+                    <input type="text" id="salt" name="salt" placeholder="Use automatic salt"
+                            value="<?php echo htmlspecialchars($salt, ENT_QUOTES, 'UTF-8'); ?>">
+                    </dd>
                 <dt>Set Cost</dt>
                 <dd><input type="number" name="cost" id="cost" min="4" max="999999999" placeholder="Set Cost" value="<?php echo $cost ?>"></dd>
                 <dt>&nbsp;</dt>
