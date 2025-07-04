@@ -153,7 +153,9 @@ if (isset($_POST['password_get_info'])){
                 <dd><input type="submit" name="password_hash" value="password_hash($password, $algorithm, $options)">
             </dl>
             <?php if ($hash): ?>
-                <p style="clear:both;">Your generated hash is: <span class="code"><?php echo $hash ?></span></p>
+                <!--<p style="clear:both;">Your generated hash is: <span class="code">--><//?php echo $hash ?><!--</span></p>-->
+                <p style="clear:both;">Your generated hash is: <span class="code"><?php echo htmlspecialchars($hash, ENT_QUOTES, 'UTF-8'); ?></span></p>
+
             <?php endif ?>
             <?php if ($time): ?>
                 <p> Took <?php echo $time ?> seconds to generate this hash</p>
