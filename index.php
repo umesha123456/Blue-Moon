@@ -49,7 +49,8 @@ session_start();
         $bdHandler = new BookingDetailHandler();
         $cBookings = $bdHandler->getCustomerBookings($cHandler);
         $isSessionExists = true;
-        $isAdmin = $_SESSION["authenticated"];
+        $isAdmin = isset($_SESSION["authenticated"]) ? $_SESSION["authenticated"] : false;
+
     }
     if (isset($_SESSION["isAdmin"]) && isset($_SESSION["username"])) {
         $isSessionExists = true;
@@ -489,7 +490,7 @@ session_start();
 </main>
 
 <footer class="container">
-    <p>&copy; Company 2017-2018</p>
+    <p>&copy; Blue Moon 2025</p>
 </footer>
 <script src="js/utilityFunctions.js"></script>
 
