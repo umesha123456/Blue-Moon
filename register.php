@@ -44,10 +44,10 @@ if (isset($_SESSION["authenticated"]))
                                 </div>
                                 <div class="form-group">
                                     <label for="registrationPhoneNumber">Phone Number</label>
-                                    <input type="text" class="form-control"
+                                    <input type="tel" class="form-control"
                                            id="registrationPhoneNumber"
                                            name="registrationPhoneNumber"
-                                           placeholder="(123) 456-7890">
+                                           placeholder="(077) 123-4567">
                                 </div>
                                 <div class="form-group">
                                     <label for="registrationEmail">Email</label>
@@ -63,8 +63,10 @@ if (isset($_SESSION["authenticated"]))
                                     <input type="password" class="form-control"
                                            id="registrationPassword"
                                            name="registrationPassword"
-                                           placeholder="password"
-                                           title="At least 4 characters with letters and numbers"
+                                           placeholder="Enter Password"
+                                           minlength="8"
+                                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
+                                           title="Must contain at least 8 characters, including uppercase, lowercase, number, and special character"
                                            required="">
                                 </div>
                                 <div class="form-group">
@@ -73,6 +75,9 @@ if (isset($_SESSION["authenticated"]))
                                     <input type="password" class="form-control"
                                            id="registrationPassword2"
                                            name="registrationPassword2"
+                                           minlength="8"
+                                           pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
+                                           title="Must contain at least 8 characters, including uppercase, lowercase, number, and special character"
                                            placeholder="Retype Password" required="">
                                 </div>
                                 <div class="form-group">
