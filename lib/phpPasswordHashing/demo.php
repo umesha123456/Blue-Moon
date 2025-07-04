@@ -168,9 +168,11 @@ if (isset($_POST['password_get_info'])){
             <h2>password_verify() example</h2>
             <dl>
                 <dt>Enter password</dt>
-                <dd><input type="text" id="password" name="password" placeholder="Enter Password" value="<?php echo $pass ?>"></dd>
+                <dd><input type="text" id="password" name="password" placeholder="Enter Password" value="<?php echo htmlspecialchars($pass, ENT_QUOTES, 'UTF-8'); ?>"></dd>
+
                 <dt>Enter hash</dt>
-                <dd><input type="text" id="hash" name="hash" placeholder="Enter Hash" value="<?php echo $hash ?>"></dd>
+                <dd><input type="text" id="hash" name="hash" placeholder="Enter Hash" value="<?php echo htmlspecialchars($hash, ENT_QUOTES, 'UTF-8'); ?>"></dd>
+
                 <dt>&nbsp;</dt>
                 <dd><input type="submit" name="password_verify" value="password_verify($password, $hash)">
             </dl>
@@ -185,7 +187,7 @@ if (isset($_POST['password_get_info'])){
             <h2>password_needs_rehash() example</h2>
             <dl>
                 <dt>Enter hash</dt>
-                <dd><input type="text" id="password" name="hash" placeholder="Enter Password" value="<?php echo $hash ?>"></dd>
+                <dd><input type="text" id="password" name="hash" placeholder="Enter Password" value="<?php echo htmlspecialchars($hash, ENT_QUOTES, 'UTF-8'); ?>"></dd>
                 <dt>Select Algorithm</dt>
                 <dd><select name="algo" id="algo">
                         <option value="<?php echo PASSWORD_DEFAULT ?>" <?php echo $selectedDefault ?>>Default</option>
@@ -209,7 +211,7 @@ if (isset($_POST['password_get_info'])){
             <h2>password_get_info() example</h2>
             <dl>
                 <dt>Enter hash</dt>
-                <dd><input type="text" id="password" name="hash" placeholder="Enter Password" value="<?php echo $hash ?>"></dd>
+                <dd><input type="text" id="password" name="hash" placeholder="Enter Password" value="<?php echo htmlspecialchars($hash, ENT_QUOTES, 'UTF-8'); ?>"></dd>
                 <dt>&nbsp;</dt>
                 <dd><input type="submit" name="password_get_info" value="password_get_info($hash)">
             </dl>
