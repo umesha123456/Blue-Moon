@@ -37,6 +37,7 @@ if (isset($_SESSION["authenticated"]))
                             <form class="form" role="form" autocomplete="off" id="registration-form" method="post">
                                 <div class="form-group">
                                     <label for="registrationFullName">Name</label>
+                                    <span class="red-asterisk"> *</span>
                                     <input type="text" class="form-control"
                                            id="registrationFullName"
                                            name="registrationFullName"
