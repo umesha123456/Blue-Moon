@@ -201,7 +201,7 @@ session_start();
                                     </button>
                                     <?php } ?>
                                 </div>
-                                <small class="text-muted">25000LKR per Day</small>
+                                <small class="text-muted">$250 / night</small>
                             </div>
                         </div>
                     </div>
@@ -224,7 +224,7 @@ session_start();
                                     Book
                                 </button>
                                 <?php } ?>
-                                <small class="text-muted">18000LKR per Day</small>
+                                <small class="text-muted">$180 / night</small>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@ session_start();
                                     Book
                                 </button>
                                 <?php } ?>
-                                <small class="text-muted">12000LKR per Day</small>
+                                <small class="text-muted">$130 / night</small>
                             </div>
                         </div>
                     </div>
